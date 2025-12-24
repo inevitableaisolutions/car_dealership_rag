@@ -1,0 +1,170 @@
+[
+    {
+        "vin": "1HGCM82633A004352",
+        "make": "Honda",
+        "model": "Accord",
+        "year": 2024,
+        "type": "Sedan",
+        "price": 32500,
+        "mileage": 0,
+        "color": "Pearl White",
+        "fuel_type": "Gasoline",
+        "transmission": "Automatic CVT",
+        "features": [
+            "Apple CarPlay",
+            "Android Auto",
+            "Lane Keeping Assist",
+            "Adaptive Cruise Control",
+            "Sunroof"
+        ],
+        "description": "Brand new 2024 Honda Accord EX-L with premium features. Excellent fuel economy and Honda reliability.",
+        "status": "Available"
+    },
+    {
+        "vin": "5YJSA1E26MF123456",
+        "make": "Toyota",
+        "model": "RAV4",
+        "year": 2023,
+        "type": "SUV",
+        "price": 38900,
+        "mileage": 12500,
+        "color": "Midnight Black",
+        "fuel_type": "Hybrid",
+        "transmission": "Automatic",
+        "features": [
+            "All-Wheel Drive",
+            "Toyota Safety Sense",
+            "Heated Seats",
+            "Wireless Charging",
+            "Panoramic Roof"
+        ],
+        "description": "Certified pre-owned 2023 Toyota RAV4 Hybrid XLE. One owner, excellent condition with remaining factory warranty.",
+        "status": "Available"
+    },
+    {
+        "vin": "1G1YY22G965109876",
+        "make": "Ford",
+        "model": "F-150",
+        "year": 2024,
+        "type": "Truck",
+        "price": 52000,
+        "mileage": 0,
+        "color": "Oxford White",
+        "fuel_type": "Gasoline",
+        "transmission": "10-Speed Automatic",
+        "features": [
+            "4x4",
+            "Tow Package",
+            "Bed Liner",
+            "360 Camera",
+            "Pro Power Onboard"
+        ],
+        "description": "New 2024 Ford F-150 XLT SuperCrew. Ready for work or adventure with best-in-class towing.",
+        "status": "Available"
+    },
+    {
+        "vin": "WVWZZZ3CZWE123789",
+        "make": "Chevrolet",
+        "model": "Equinox EV",
+        "year": 2024,
+        "type": "Electric SUV",
+        "price": 43500,
+        "mileage": 0,
+        "color": "Radiant Red",
+        "fuel_type": "Electric",
+        "transmission": "Single-Speed",
+        "features": [
+            "319 Mile Range",
+            "DC Fast Charging",
+            "Super Cruise",
+            "17.7\" Touchscreen",
+            "Glass Roof"
+        ],
+        "description": "All-new 2024 Chevrolet Equinox EV RS. Zero emissions, zero compromise on style and technology.",
+        "status": "Available"
+    },
+    {
+        "vin": "JN1TBNT30Z0000001",
+        "make": "BMW",
+        "model": "X5",
+        "year": 2022,
+        "type": "Luxury SUV",
+        "price": 58500,
+        "mileage": 28000,
+        "color": "Alpine White",
+        "fuel_type": "Gasoline",
+        "transmission": "8-Speed Automatic",
+        "features": [
+            "M Sport Package",
+            "Premium Sound",
+            "Head-Up Display",
+            "Gesture Control",
+            "Parking Assistant"
+        ],
+        "description": "Pre-owned 2022 BMW X5 xDrive40i with M Sport package. Exceptional condition with full service history.",
+        "status": "Available"
+    },
+    {
+        "vin": "2T3DFREV5NW123456",
+        "make": "Hyundai",
+        "model": "Tucson",
+        "year": 2024,
+        "type": "SUV",
+        "price": 34200,
+        "mileage": 0,
+        "color": "Amazon Gray",
+        "fuel_type": "Hybrid",
+        "transmission": "6-Speed Automatic",
+        "features": [
+            "Hyundai SmartSense",
+            "Blind Spot Monitoring",
+            "Wireless CarPlay",
+            "Remote Start",
+            "Heated Steering"
+        ],
+        "description": "New 2024 Hyundai Tucson Hybrid SEL. Best-in-class warranty with excellent fuel efficiency.",
+        "status": "Available"
+    },
+    {
+        "vin": "3GCPWDED2MG654321",
+        "make": "Mercedes-Benz",
+        "model": "GLC 300",
+        "year": 2023,
+        "type": "Luxury SUV",
+        "price": 49800,
+        "mileage": 15200,
+        "color": "Obsidian Black",
+        "fuel_type": "Gasoline",
+        "transmission": "9-Speed Automatic",
+        "features": [
+            "4MATIC AWD",
+            "Burmester Audio",
+            "MBUX Infotainment",
+            "Ambient Lighting",
+            "Premium Package"
+        ],
+        "description": "Certified pre-owned 2023 Mercedes-Benz GLC 300. Luxury compact SUV with comprehensive warranty.",
+        "status": "Available"
+    },
+    {
+        "vin": "KMHD84LF2NU789012",
+        "make": "Kia",
+        "model": "Telluride",
+        "year": 2024,
+        "type": "Full-Size SUV",
+        "price": 47500,
+        "mileage": 0,
+        "color": "Gravity Gray",
+        "fuel_type": "Gasoline",
+        "transmission": "8-Speed Automatic",
+        "features": [
+            "8 Passenger Seating",
+            "Captains Chairs",
+            "Highway Driving Assist",
+            "Harman Kardon Audio",
+            "AWD"
+        ],
+        "description": "New 2024 Kia Telluride SX. Award-winning family SUV with premium features and legendary warranty.",
+        "status": "Available"
+    }
+]

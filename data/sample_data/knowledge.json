@@ -1,0 +1,54 @@
+{
+    "faqs": [
+        {
+            "question": "What financing options do you offer?",
+            "answer": "We offer a variety of financing options to fit your budget. Our finance team works with multiple lenders including major banks, credit unions, and captive finance companies. We offer terms from 24 to 84 months, competitive APR rates starting from 3.9% for qualified buyers, and special programs for first-time buyers and those rebuilding credit. We also offer lease options on select new vehicles."
+        },
+        {
+            "question": "How does the trade-in process work?",
+            "answer": "Trading in your vehicle is simple! Bring your car to our dealership for a free appraisal. Our trained appraisers will evaluate your vehicle's condition, mileage, and market value. You'll receive a competitive offer within 30 minutes. If you accept, the trade-in value is applied directly to your new purchase, potentially lowering your monthly payments and reducing sales tax. We accept trade-ins even if you don't buy from us."
+        },
+        {
+            "question": "What warranties come with your vehicles?",
+            "answer": "New vehicles come with full manufacturer warranties. For example, most include 3-year/36,000-mile bumper-to-bumper coverage and 5-year/60,000-mile powertrain warranty. Certified pre-owned vehicles include extended warranty coverage and have passed rigorous multi-point inspections. We also offer extended service contracts for additional peace of mind, covering major components for up to 10 years or 100,000 miles."
+        },
+        {
+            "question": "Can I schedule a test drive?",
+            "answer": "Absolutely! Test drives can be scheduled online through our website, by calling us at (555) 123-4567, or by simply walking in during business hours. We recommend scheduling in advance for specific vehicles to ensure availability. Test drives typically last 20-30 minutes and our sales consultants will accompany you to answer any questions about the vehicle."
+        },
+        {
+            "question": "Do you offer home delivery?",
+            "answer": "Yes, we offer complimentary home delivery within a 50-mile radius of our dealership. For customers beyond this range, we can arrange delivery for a nominal fee. All paperwork can be completed digitally, and we'll bring the vehicle to your home or office at a time convenient for you."
+        },
+        {
+            "question": "What is your price match guarantee?",
+            "answer": "We're committed to offering competitive prices. If you find the same new vehicle at a lower price from an authorized dealer within 100 miles, we'll match that price. Simply bring us a written quote showing the vehicle details, VIN, and out-the-door price. This guarantee applies to identically equipped new vehicles only."
+        },
+        {
+            "question": "Do you service all vehicle makes?",
+            "answer": "Our service department is equipped to handle all makes and models. Our factory-trained technicians use state-of-the-art diagnostic equipment and genuine OEM parts. We offer oil changes, tire services, brake repairs, engine diagnostics, and major repairs. Service appointments can be booked online, and we provide complimentary multi-point inspections with every visit."
+        },
+        {
+            "question": "What payment methods do you accept?",
+            "answer": "We accept multiple payment methods including cash, personal checks, certified checks, bank drafts, credit cards (Visa, Mastercard, American Express, Discover), and electronic bank transfers. For credit card payments, there may be a transaction limit. Full payment details will be discussed with your sales consultant."
+        }
+    ],
+    "policies": [
+        {
+            "title": "Return Policy",
+            "content": "We want you to be completely satisfied with your purchase. New vehicles may be returned within 7 days or 500 miles (whichever comes first) for a full refund or exchange, provided the vehicle is in the same condition as delivered. Pre-owned vehicles have a 3-day/150-mile return window. Return requests must be initiated by contacting our customer service team. Vehicles must be returned with all original accessories, documentation, and without any damage beyond normal test driving."
+        },
+        {
+            "title": "Privacy Policy",
+            "content": "We respect your privacy and are committed to protecting your personal information. We collect only the information necessary to process your vehicle purchase, financing applications, and service appointments. Your information is never sold to third parties. We may share information with lenders, manufacturers, and service providers as needed to complete transactions. You can request a copy of your data or opt out of marketing communications at any time."
+        },
+        {
+            "title": "Service Guarantee",
+            "content": "All service work performed at our dealership is backed by our satisfaction guarantee. If you're not satisfied with any service, return within 30 days and we'll make it right at no additional cost. Parts and labor are warranted for 12 months or 12,000 miles. We use only genuine OEM parts unless you request otherwise. Our service advisors will provide a detailed estimate before any work begins."
+        },
+        {
+            "title": "Price Transparency",
+            "content": "All listed prices are our best prices - no haggling required. Prices include all dealer fees and destination charges. Additional costs may include: state/local taxes (varies by location), title and registration fees (set by your state), and optional extras like extended warranties or accessories you choose to add. We provide a complete out-the-door price breakdown before you sign any paperwork."
+        }
+    ]
+}
