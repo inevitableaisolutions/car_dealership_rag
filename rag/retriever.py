@@ -1,12 +1,10 @@
 """Hybrid retriever with reranking for RAG."""
 
-from langchain.retrievers import EnsembleRetriever
 from langchain_core.documents import Document
 from typing import List
 
 from app.config import (
     TOP_K_RESULTS,
-    RELEVANCE_THRESHOLD,
     COLLECTION_INVENTORY,
     COLLECTION_KNOWLEDGE,
     COLLECTION_POLICIES,
@@ -24,42 +22,27 @@ def get_retriever(collection_name: str = None):
     if collection_name:
         vectorstore = get_vectorstore(collection_name)
         return vectorstore.as_retriever(
-            search_type="similarity_score_threshold",
-            search_kwargs={
-                "k": TOP_K_RESULTS,
-                "score_threshold": RELEVANCE_THRESHOLD
-            }
+            search_type="similarity",
+            search_kwargs={"k": TOP_K_RESULTS}
         )
     
-    # Create ensemble retriever across all collections
-    retrievers = []
+    # For all collections, return the first available
     for name in [COLLECTION_INVENTORY, COLLECTION_KNOWLEDGE, COLLECTION_POLICIES]:
         try:
             vs = get_vectorstore(name)
-            retrievers.append(
-                vs.as_retriever(
-                    search_type="similarity",
-                    search_kwargs={"k": TOP_K_RESULTS}
-                )
+            return vs.as_retriever(
+                search_type="similarity",
+                search_kwargs={"k": TOP_K_RESULTS}
             )
         except Exception:
             continue
     
-    if not retrievers:
-        raise ValueError("No collections available for retrieval")
-    
-    # Equal weights across all collections
-    weights = [1.0 / len(retrievers)] * len(retrievers)
-    
-    return EnsembleRetriever(
-        retrievers=retrievers,
-        weights=weights
-    )
+    raise ValueError("No collections available for retrieval")
 
 
 def retrieve_with_scores(query: str, collection_name: str = None) -> List[tuple]:
     """
-    Retrieve documents with relevance scores.
+    Retrieve documents with relevance scores from all collections.
     
     Returns:
         List of (Document, score) tuples
@@ -77,8 +60,9 @@ def retrieve_with_scores(query: str, collection_name: str = None) -> List[tuple]
         except Exception:
             continue
     
-    # Sort by score (higher is better) and return top k
-    results.sort(key=lambda x: x[1], reverse=True)
+    # Sort by score (lower distance = better match for many vector stores)
+    # Weaviate returns distance, so lower is better
+    results.sort(key=lambda x: x[1])
     return results[:TOP_K_RESULTS]
 
 
