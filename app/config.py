@@ -7,13 +7,18 @@ from dotenv import load_dotenv
 # Load environment variables
 load_dotenv()
 
+# Check for Streamlit secrets (for Streamlit Cloud deployment)
+try:
+    import streamlit as st
+    GOOGLE_API_KEY = st.secrets.get("GOOGLE_API_KEY", os.getenv("GOOGLE_API_KEY"))
+    TAVILY_API_KEY = st.secrets.get("TAVILY_API_KEY", os.getenv("TAVILY_API_KEY"))
+except Exception:
+    GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+    TAVILY_API_KEY = os.getenv("TAVILY_API_KEY")
+
 # Base paths
 BASE_DIR = Path(__file__).parent.parent
 DATA_DIR = BASE_DIR / "data" / "sample_data"
-
-# API Keys
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
-TAVILY_API_KEY = os.getenv("TAVILY_API_KEY")
 
 # Weaviate settings
 WEAVIATE_URL = os.getenv("WEAVIATE_URL", "")
