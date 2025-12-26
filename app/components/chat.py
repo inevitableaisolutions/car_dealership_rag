@@ -1,7 +1,6 @@
 """Chat UI component for Streamlit."""
 
 import streamlit as st
-from graph.workflow import run_query
 
 
 def init_chat_state():
@@ -49,12 +48,15 @@ def render_chat():
         with st.chat_message("assistant"):
             with st.spinner("Thinking..."):
                 try:
+                    # Import here to avoid circular imports
+                    from graph.workflow import run_query
+                    
                     result = run_query(
                         query=prompt,
                         messages=st.session_state.conversation_history
                     )
                     
-                    response = result["response"]
+                    response = result.get("response", "No response generated")
                     sources = result.get("sources", [])
                     used_web = result.get("used_web_search", False)
                     
@@ -86,8 +88,10 @@ def render_chat():
                     })
                     
                 except Exception as e:
-                    error_msg = f"Sorry, I encountered an error: {str(e)}"
+                    import traceback
+                    error_msg = f"Error: {str(e)}"
                     st.error(error_msg)
+                    st.code(traceback.format_exc())
                     st.session_state.messages.append({
                         "role": "assistant",
                         "content": error_msg
