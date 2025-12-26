@@ -30,7 +30,7 @@ EMBEDDING_MODEL = "models/text-embedding-004"
 EMBEDDING_DIMENSION = 768
 
 # LLM settings
-LLM_MODEL = "gemini-1.5-flash"
+LLM_MODEL = "gemini-2.0-flash"
 LLM_TEMPERATURE = 0.1
 LLM_MAX_TOKENS = 8192
 
